@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+    *{
+        box-sizing: border-box;
+    }
+
+    /* 重複使用class */
+    .flex{
+        display: flex;
+    }
+    .aspect_ratio_width90{
+        width: 90%;
+        max-width: 1600px;
+        margin: 0 auto;
+        background-color: hotpink;
+    }
+    .width100{
+        width: 100%;
+    }
+    .position_relative{
+        position: relative;
+    }
+    .position_absolute{
+        position: absolute;
+    }
+    /* 重複使用class */
+
+    .container{
+        background-color: linen;
+    }
+    .header{
+        background-color: linen;
+    }
+    .header_content{
+        height: 56px;
+    }    
+    .primary_banner{
+        padding: 37.5% 0 0 0;
+        background-color: lightpink;
+        margin: 0 0 48px 0;
+    }
+    .product{
+        padding: 22% 0 0 0;
+        background-color: lightpink;
+        margin: 0 0 63px 0;
+    }
+    .hero_product{
+        padding: 37.5% 0 0 0;
+        background-color: lightpink;
+        margin: 0 0 51px 0;
+    }
+    .for_work{
+        padding: 26% 0 0 0;
+        background-color: lightpink;
+        margin: 0 0 65px 0;
+    }
+    .social_media{
+        width: 300px;
+        height: 28px;
+        background-color: lightsalmon;
+        margin: 0 0 50px 0;
+    }
+    .footer_content{
+        height: 396px;
+    }
+
+    
+    
+
+
+</style>
+<body>
+    <div class="container width100">
+        <div class="header width100">
+            <div class="header_content aspect_ratio_width90"></div>
+        </div>
+        <div class="content aspect_ratio_width90">
+            <div class="primary_banner width100 position_relative"></div>
+            <div class="product width100"></div>
+            <div class="hero_product width100"></div>
+            <div class="for_work width100"></div>
+            <div class="social_media width100"></div>
+        </div>
+        <div class="footer width100">
+            <div class="footer_content aspect_ratio_width90"></div>
+        </div>
+    </div>
+</body>
+</html>

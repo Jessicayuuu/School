@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    html {
+    scroll-behavior: smooth;
+    }
+    a{
+        color: black;
+    }
+    a:visited{
+        color: lightskyblue;
+    }
+    a:active .menu{
+        color: lightseagreen;
+        background-color: lightpink
+    }
+    a:hover .menu:hover{
+        color: lightyellow;
+        background-color: lightslategrey;
+    }
+    body{
+        margin: 0;
+
+    }
+    #all{
+        background-color: burlywood;
+        min-width: 80%;
+    }
+
+    #top{
+        background-image: url("img/spring.jpg");
+        
+    }
+    .topstyle{
+        width: 80%;
+        height: 50vh;
+        padding-top: 50vh;
+        
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #navbar{
+        /* background-color:blue; */
+        position: relative;
+        clear: both;
+        position: fixed;
+        
+        width: 80%;
+        right: 10%;
+        height: 160px;  
+    }
+
+    #logo{
+        /* background-color: silver; */
+        width: 120px;
+        height: 120px;
+        border-radius: 60px; 
+        margin-right: 60%;
+        float: left;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+
+        background-image: url("img/logo.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    #line{
+        float: right;
+        
+    }
+
+    .menu{
+        width: 60px;
+        height: 40px;
+        background-color: lightyellow;
+        /* margin-right: 10px; */
+        line-height: 40px;
+        padding: 0 10px;
+        float: left;
+        margin-right: 10px;
+        margin-top: 50px;
+        
+    }
+
+
+    .coverstyle{
+        width: 100%;
+        height: calc(25vh + 25px);
+        padding-top: calc(25vh - 25px);  
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .btnstyle{
+        width: 300px;
+        height: 50px;
+        border-radius: 30px;
+        margin-left: auto;
+        margin-right: auto;
+
+        background-color: lightseagreen;
+        transition: 1s;
+    }
+    .btnstyle:hover{
+        background-color: lightsalmon;
+    }
+    .btnstyle:active{
+        background-color: lightslategrey;
+    }
+    #top1{
+        background-image: url("img/fall.jpg");
+    }
+    #top2{
+        background-image: url("img/winter.jpg");
+    }
+    
+
+
+</style>
+<body>
+    <div id="all">
+        <div id="navbar">
+            <div id="logo"></div>
+            <div id="line">
+                <a href="#top">
+                <div id="square" class="menu">Spring</div>
+                </a>
+                <a href="#top1">
+                <div id="square" class="menu">Fall</div>
+                </a>
+                <a href="#top2">
+                <div id="square" class="menu">Winter</div>
+                </a>
+            </div>
+        </div>
+        <div id="top" class="topstyle">
+            <!-- <div id="navbar">
+                <div id="logo"></div>
+                <a href="#top">
+                <div id="square" class="menu">Squirrel</div>
+                </a>
+                <a href="#top1">
+                <div id="square" class="menu">Tiger</div>
+                </a>
+                <a href="#top2">
+                <div id="square" class="menu">Eagle</div>
+                </a>
+            </div> -->
+            <div id="cover" class="coverstyle">
+                <div id="btn" class="btnstyle"></div>
+            </div>
+        </div>
+        <div id="top1" class="topstyle">
+            <div id="cover1" class="coverstyle">
+                <div id="btn1" class="btnstyle"></div>
+            </div>
+        </div>
+        <div id="top2" class="topstyle">
+            <div id="cover2" class="coverstyle">
+                <div id="btn2" class="btnstyle"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

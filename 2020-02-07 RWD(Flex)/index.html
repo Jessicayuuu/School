@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 0;
+    display: flex;
+}
+#menu{
+    background-color: lightslategrey;
+    width: 366px;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+
+}
+#logo{
+    background-image: url('img/japan logo.jpg');
+    width: 150px;
+    height: 150px;
+    margin-bottom: 40px;
+}
+#main{
+    background-color: lightsteelblue;
+    width: calc(100% - 366px);
+    height: 100vh;
+    padding-top: calc(50vh - 285px);
+    display: flex;
+    justify-content: center;
+}
+#photo{
+    background-color: lightyellow;
+    width: 956px;
+    height: 570px;
+    display: flex;
+    justify-content: start;
+}
+.photostyle{
+    background-color: lightgray;
+    background-position: center;
+    background-size: cover;
+    width: calc((100% - 20px) / 3);
+    height: 100%;
+}
+#photoX{
+    background-image: url('img/spring.jpg');
+    margin-right: 10px;
+}
+#photoY{ 
+    background-image: url('img/fall.jpg');
+    margin-right: 10px;
+}
+#photoZ{ 
+    background-image: url('img/winter.jpg');
+}
+.coverstyle{
+    background-color: rgba(247, 241, 241, 0.7);
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+:hover{
+    background-color: rgba(247, 241, 241, 0);
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+    background-color: lightgoldenrodyellow;
+    padding: 5px 20px; 
+    margin: 10px;
+}
+.bar-open{
+        display: none;
+    }
+@media (max-width: 1324px){
+#main{
+    width: calc(100% - 366px);
+    height: 100vh;
+    padding-top: calc(50vh - 285px);
+}
+#photo{
+    width: 800px;
+    height: 570px;
+    display: flex;
+    flex-wrap: wrap;    
+}
+#photoX{
+    width: 100%;
+    height: calc(50% - 5px);
+    margin-bottom: 10px;
+    margin-right: 0;
+}
+#photoY{ 
+    width: calc(50% - 5px);
+    height: calc(50% - 5px);
+    margin-right: 10px;
+    
+}
+#photoZ{ 
+    width: calc(50% - 5px);
+    height: calc(50% - 5px);
+}
+}
+@media (max-width: 1164px){
+body{
+    flex-direction: column;
+}
+
+#menu{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 40px; */
+
+}
+#logo{
+    width: 80px;
+    height: 80px;
+    
+}
+#main{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+}
+#photo{
+    width: 800px;
+    height: 570px;
+    display: flex;
+    flex-wrap: wrap;    
+}
+#photoX{
+    width: 100%;
+    height: calc(50% - 5px);
+
+}
+#photoY{ 
+    width: calc(50% - 5px);
+    height: calc(50% - 5px);
+    margin-right: 10px;
+    
+}
+#photoZ{ 
+    width: calc(50% - 5px);
+    height: calc(50% - 5px);
+}
+li{
+    display: inline-block;
+}
+}
+@media (max-width: 800px){
+    #menu{
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 40px;
+
+    }
+    #bar{
+        background-color: lightgoldenrodyellow;
+        width: 40px;
+        height: 50px;
+    }
+    #logo{
+        background-image: url('img/japan logo.jpg');
+        width: 55px;
+        height: 55px; 
+        margin: auto; 
+    }
+    #main{
+        height: calc(100vh - 80px);
+    }
+    #photo{
+        height: calc(100vh - 80px);
+    }
+    #photoX{
+        width: 100%;
+        height: calc((100vh - 80px)/3);
+        margin: 0;
+    }
+    #photoY{ 
+        width: 100%;
+        height: calc((100vh - 80px)/3);
+        margin: 0;
+        
+    }
+    #photoZ{ 
+        width: 100%;
+        height: calc((100vh - 80px)/3);
+    }
+    .menubtn{
+        display: none;
+    }
+    .bar-open {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 60px;
+        left: -134px;
+        transition: 1s;
+
+    }
+    .bar-open ul {
+        display: inline-block;
+
+    }
+    .bar-open li {
+        display: list-item;
+
+    }
+    #bar:hover + .bar-open{
+        left: 10px;
+    }
+    .bar-open:hover{
+        left: 10px;
+    }
+
+
+}
+
+
+</style>
+<body>
+    <div id="menu">
+        <div id="bar"></div>
+        <div class="bar-open">
+            <ul>
+                <li>AAAAA</li>
+                <li>AAAAA</li>
+                <li>AAAAA</li>
+            </ul>
+        </div>
+        <div id="logo"class="photostyle"></div>
+        <div class="menubtn">
+            <ul>
+                <li>AAAAA</li>
+                <li>AAAAA</li>
+                <li>AAAAA</li>
+            </ul>
+        </div>
+        
+    </div>
+    <div id="main">
+        <div id="photo">
+            <div id="photoX" class="photostyle">
+                <div id="coverX" class="coverstyle"></div>
+            </div>
+            <div id="photoY" class="photostyle">
+                <div id="coverY" class="coverstyle"></div>
+            </div>
+            <div id="photoZ" class="photostyle">
+                <div id="coverZ" class="coverstyle"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+}
+
+/* 重複使用class>>> */
+.flex{
+    display: flex;
+}
+.aspect_ratio_width90{
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: hotpink;
+}
+.width100{
+    width: 100%;
+}
+.position_relative{
+    position: relative;
+}
+.position_absolute{
+    position: absolute;
+}
+/* <<<重複使用class */
+
+/* 標籤>>> */
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+    display: inline;
+}
+/* <<<標籤 */
+
+.container{
+    background-color: linen;
+}
+
+
+/* header>>> */
+.header{
+    background-color: linen;
+    height: 56px;
+    background-color: rgb(231, 21, 53);
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+}
+.logo img{
+    width: 108px;
+    position: relative;
+    top: 5px;
+}
+ul > .menu_text{
+    padding: 0px 8px 10px 8px;
+    line-height: 56px;
+}
+/* <<<header */
+
+/* primari_banner>>> */
+.primary_banner{
+    padding: 37.5% 0 0 0;
+    background-color: lightpink;
+    margin: 0 0 48px 0;
+    transition: 0.5s;
+    overflow: hidden;
+    position: relative;
+}
+.banner_container{
+    width: 200%;
+    padding: 37.5% 0 0 0;
+    position: absolute;
+    background-color: aqua;
+}
+.banner_1{
+    background-image: url("/02-img/02-primary_banner/banner_1.webp");
+    width: 100%;
+    padding: 37.5% 0 0 0;
+    /* position: absolute;
+    left: 0px;
+    top: 0px; */
+}
+.banner_2{
+    background-image: url("/02-img/02-primary_banner/banner_2.webp");
+    width: 100%;
+    padding: 37.5% 0 0 0;
+    /* position: absolute;
+    left: 1600px;
+    top: 0px; */
+}
+
+
+
+/* <<<primari_banner */
+
+.product_area{
+    padding: 22% 0 0 0;
+    background-color: lightpink;
+    margin: 0 0 63px 0;
+}
+.hero_product{
+    padding: 37.5% 0 0 0;
+    background-color: lightpink;
+    margin: 0 0 51px 0;
+}
+.for_work_area{
+    padding: 26% 0 0 0;
+    background-color: lightpink;
+    margin: 0 0 65px 0;
+}
+.social_media{
+    width: 300px;
+    height: 28px;
+    background-color: lightsalmon;
+    margin: 0 0 50px 0;
+}
+.footer_content{
+    height: 396px;
+}

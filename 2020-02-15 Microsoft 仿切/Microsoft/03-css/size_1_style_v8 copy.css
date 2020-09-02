@@ -1,0 +1,226 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+}
+
+/* 重複使用class>>> */
+.flex{
+    display: flex;
+}
+.width100{
+    width: 100%;
+}
+.height100{
+    height: 100%;
+}
+.position_relative{
+    position: relative;
+}
+.position_absolute{
+    position: absolute;
+}
+.bg_style{
+    background-size: 100%;
+}
+.transition{
+    transition: 0.5s;
+}
+.z_index{
+    z-index: 100;
+}
+.arrow{
+    width: 50px;
+    height: 100px;
+    background-color: rgba(128, 0, 0, 0.575);
+}
+/* <<<重複使用class */
+
+/* 標籤>>> */
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+    display: inline;
+}
+/* <<<標籤 */
+
+.container{
+    background-color: linen;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* header>>> */
+.header{
+    width: 90vw;
+    max-width: 1600px;
+    height: 56px;
+    background-color: rgb(231, 21, 53);
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+}
+.logo{
+    padding: 0 0 0 10px;
+}
+.logo img{
+    width: 108px;
+    position: relative;
+    top: 5px;
+}
+ul > .menu_text{
+    padding: 0px 8px 10px 8px;
+    line-height: 56px;
+} */
+/* <<<header */
+
+.content{
+    width: 90vw;
+    max-width: 1600px;
+    background-color: burlywood;
+    /* flex-wrap: wrap;
+    justify-content: center; */
+}
+
+/* primari_banner>>> */
+.primary_banner{
+    max-width: 1600px;
+    width: 90vw;
+    height: 34vw;
+    max-height: 600px;
+    background-color: lightpink;
+    margin: 0 0 48px 0;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+}
+.banner_container{
+    width: 200%;
+    background-color: rgba(0, 255, 0, 0.479);
+    left: 0px;
+}
+.banner_1{
+    background-image: url("/02-img/02-primary_banner/banner_1.webp");
+}
+.banner_2{
+    background-image: url("/02-img/02-primary_banner/banner_2.webp");
+}
+/* .banner_container:hover{
+    left: -100%;
+} */
+.banner_arrow_btn{
+    max-height: 600px;
+    position: absolute;
+    background-color: mediumblue;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner_text{
+    width: 400px;
+    height: 150px;
+    background-color: rgba(85, 211, 112, 0.623);
+    left: 100px;
+    top: calc(50% - 75px);
+}
+.banner_bottom_btn{
+    align-self: flex-end;
+}
+
+/* <<<primari_banner */
+
+/* product_area>>> */
+.product_area{
+    width: 90vw;
+    max-width: 1600px;
+    height:22vw ;
+    max-height: 363px;
+    background-color: lightpink;
+    margin: 0 0 63px 0;
+    justify-content: space-between;
+}
+.product{
+    width: 24%;
+    max-width: 358px;
+    height: 100%;
+    background-color: rgba(196, 250, 0, 0.548);
+    font-size: 15px;
+}
+.product img{
+    width: 100%;
+    margin: 0 0 15px 0;
+}
+/* product_area>>> */
+
+/* hero_product>>> */
+.hero_product{
+    max-width: 1600px;
+    width: 90vw;
+    height: 34vw;
+    max-height: 600px;
+    background-color: lightpink;
+    margin: 0 0 51px 0;
+    background-image: url("/02-img/04-hero_product/hero_product.webp");
+    align-items: center;
+}
+.hero_product_intro{
+    left: 100px;
+}
+.hero_product_intro_title{
+    font-size: 46px;
+}
+/* <<<hero_product */
+
+/* for_work>>> */
+.for_work_title h2{
+    font-size: 24px;
+}
+.for_work_area{
+    width: 90vw;
+    max-width: 1600px;
+    height: 23vw;
+    max-height: 382px;
+    background-color: lightpink;
+    margin: 0 0 65px 0;
+    justify-content:space-between;
+}
+.for_work_content{
+    width: 24%;
+    height: 100%;
+    font-size: 15px;
+}
+.for_work_content img{
+    width: 100%;
+}
+/* <<<for_work */
+
+/* social_media>>> */
+.social_media{
+    width: 180px;
+    height: 32px;
+    background-color: lightsalmon;
+    margin: 0 0 50px 0;
+    font-size: 15px;
+    /* line-height: 20px; */
+}
+.social_media img{
+    height: 32px;
+    vertical-align: middle;
+}
+
+/* <<<social_media */
+
+.footer_content{
+    height: 396px;
+}
+.footer_content{
+    width: 90vw;
+    max-width: 1600px;
+    height: 396px;
+    background-color: lightpink;
+    margin: 0 auto;
+}
+
